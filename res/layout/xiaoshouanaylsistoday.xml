@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="40dip"
+ android:shrinkColumns="4">
+<TableRow 
+android:id="@+id/tableTitle"
+android:minHeight="40dip" android:gravity="center">
+ 
+ <TextView
+  android:padding="2dip"
+  android:textColor="#ffffff"
+  android:background="#0000FF"
+  android:gravity="center" 
+  android:text="机型"
+  android:layout_height="fill_parent"
+  android:layout_width="80dip"/>
+ <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" /> 
+ <TextView
+  android:padding="2dip"
+  android:textColor="#ffffff"
+  android:background="#0000FF"
+  android:gravity="center" 
+  android:text="类型"
+  android:layout_height="fill_parent"
+  android:layout_width="50dip"/>
+ <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+ <TextView
+  android:padding="2dip"
+  android:textColor="#ffffff"
+  android:background="#0000FF"
+  android:gravity="center" 
+  android:text="时间"
+  android:layout_height="fill_parent"
+  android:layout_width="42dip"/>
+ <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+ <TextView
+  android:padding="2dip"
+  android:textColor="#ffffff"
+  android:background="#0000FF"
+  android:gravity="center" 
+  android:text="礼物"
+  android:layout_height="fill_parent"
+  android:layout_width="60dip"/>
+ <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF909090" />
+ <TextView
+  android:padding="2dip"
+  android:textColor="#ffffff"
+  android:background="#0000FF"
+  android:gravity="center" 
+  android:text="电话"
+  android:layout_height="fill_parent"
+  android:layout_width="84dip"/>
+</TableRow> 
+</TableLayout>
+    <ListView android:id="@android:id/list" 
+      android:layout_height="fill_parent"  
+            android:layout_width="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:background="#FFFFFF"/>
+</LinearLayout>

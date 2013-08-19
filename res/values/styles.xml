@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- style风格的配置 -->
+<resources>
+
+ <style name="recent_list_item_name">
+ 		  <!-- 字体大小 -->
+      <item name="android:textSize">18.0sp</item>
+       <!-- 字体颜色 -->
+      <item name="android:textColor">#ff000000</item>
+  </style>
+    
+  <style name="recent_list_item_info">
+  		  <!-- 字体大小 -->
+        <item name="android:textSize">14.0sp</item>
+         <!-- 字体颜色 -->
+        <item name="android:textColor">#ff828282</item>
+  </style>
+  <style name="detail_default">
+  		  <!-- 字体大小 -->
+        <item name="android:textSize">16.0sp</item>
+         <!-- 字体颜色 -->
+        <item name="android:textColor">#ff000000</item>
+  </style>
+  
+  <style name="xiaoshou2">
+  	<item name="android:gravity">center</item>
+  	<item name="android:layout_marginBottom">3dip</item>
+  	<item name="android:layout_width">fill_parent</item>
+  	<item name="android:paddingLeft">15dip</item>
+  	<item name="android:paddingRight">15dip</item>
+  	<item name="android:layout_height">30dip</item>
+  	<item name="android:textSize">18dip</item>
+  	<item name="android:textColor">#ff000000</item>
+  </style>
+  
+  
+   <style name="drop_down_list_header_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+    </style>
+
+    <style name="drop_down_list_footer_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+    </style>
+
+    <style name="drop_down_list_header_font_style">
+        <item name="android:textColor">@color/drop_down_list_header_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="drop_down_list_header_second_font_style">
+        <item name="android:textColor">@color/drop_down_list_header_second_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="drop_down_list_footer_font_style">
+        <item name="android:textColor">@color/drop_down_list_footer_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+  
+</resources>

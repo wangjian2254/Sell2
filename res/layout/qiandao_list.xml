@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="#E0E0E0">
+	<RelativeLayout 
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		>
+		<TextView 
+		android:layout_alignParentTop="true"
+		android:layout_width="fill_parent" android:textColor="#565656"
+		android:layout_height="50dip" android:layout_gravity="center"
+		android:background="@drawable/umeng_analyse_feedback_bar_bg" 
+		android:layout_alignParentBottom="true"/>
+		<TextView  
+		android:layout_alignParentTop="true"
+		android:layout_width="fill_parent" android:textColor="#565656"
+		android:layout_marginTop="5dip"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="80dip"
+		android:layout_height="50dip" android:layout_gravity="center"
+		android:gravity="center|center" android:singleLine="true" android:text="签到列表" android:textSize="18dip"
+		/>
+		
+		</RelativeLayout>
+
+	<ListView android:id="@android:id/list" 
+			  android:layout_gravity="top" 
+			  android:dividerHeight="0px"
+			  android:cacheColorHint="#00000000"
+			  android:divider="#E0E0E0"
+			  android:background="#EFEFEF"
+			  android:layout_weight="1"
+			  android:transcriptMode="alwaysScroll"
+			  android:layout_height="fill_parent"
+			  android:layout_width="fill_parent"
+	></ListView>
+</LinearLayout>

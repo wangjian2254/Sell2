@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:listViewAttr="http://schemas.android.com/apk/res/com.wj.sell"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="#E0E0E0">
+	<RelativeLayout 
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent" android:layout_height="45dip"
+
+		>
+		<TextView 
+		android:layout_alignParentTop="true"
+		android:layout_width="fill_parent" android:textColor="#565656"
+		android:layout_height="85dip" android:layout_gravity="center"
+		android:background="@drawable/umeng_analyse_feedback_bar_bg" 
+		android:layout_alignParentBottom="true"/>
+		<RadioGroup android:id="@+id/rbtn_searchtype"
+		android:layout_alignParentTop="true"
+		android:orientation="horizontal"
+		android:layout_marginLeft="40dip"
+		android:layout_marginTop="5dip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+		 >
+		<RadioButton android:text="未答卷" android:id="@+id/rbtn_installall"
+		android:layout_width="wrap_content" android:layout_height="35dip" android:textColor="#565656"
+		android:checked="true" android:onClick="kaoshi1"
+		android:layout_marginLeft="5dip"
+		/>
+		<RadioButton android:text="已答卷" android:id="@+id/rbtn_install"
+		android:layout_width="wrap_content"  android:layout_height="35dip" android:textColor="#565656"
+		 android:onClick="kaoshi2"
+		 
+		android:layout_marginLeft="5dip"
+		/>
+		
+		</RadioGroup>
+		</RelativeLayout>
+	
+
+	
+	<ListView android:id="@android:id/list" 
+			  android:layout_gravity="top" 
+			  android:dividerHeight="0px"
+			  android:cacheColorHint="#00000000"
+			  android:divider="#E0E0E0"
+			  android:background="#EFEFEF"
+			  android:layout_weight="1"
+			  android:transcriptMode="alwaysScroll"
+			  android:layout_height="fill_parent"
+			  android:layout_width="fill_parent"
+	></ListView>
+	<TextView android:id="@+id/nomessage"
+	android:text="没有满足条件的考试。"
+	android:layout_gravity="center"
+	android:gravity="center|center"
+	android:textSize="25dip"
+				android:layout_width="fill_parent"
+		android:background="#EFEFEF"
+		android:layout_weight="1"
+		android:visibility="gone"
+	android:layout_height="fill_parent">
+	</TextView>
+</LinearLayout>

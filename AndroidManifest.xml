@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.wj.sell"
+      android:versionCode="3"
+      android:versionName="1.3">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:name="com.wj.sell.Location"
+		android:icon="@drawable/oalogo"  android:label="@string/app_name" android:debuggable="true">
+<meta-data android:value="51cc218556240ba38801074c"
+			android:name="UMENG_APPKEY"></meta-data>
+		<activity android:name="Main" android:configChanges="orientation|keyboardHidden"  android:theme="@android:style/Theme.NoTitleBar"
+		android:screenOrientation="portrait" android:launchMode = "singleTask" 
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+<activity android:name="com.wj.sell.Login"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		
+		<activity android:name="com.wj.sell.XiaoShouAnalysis"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.XiaoShouAnalysis2"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.XiaoShouAnalysisToday"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.QiandaoAnalysis"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.QiandaoAnalysis2"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.QiandaoList"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.WenDangList"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.WenDangDetail"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.KaoShiList"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.KaoShiDetail"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.QiandaoDetail2"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.XiaoShouDetail1"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.XiaoShouDetail2"
+		android:screenOrientation="portrait" android:launchMode="singleTask"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.CaptureActivity" android:configChanges="orientation|keyboardHidden"
+		android:screenOrientation="landscape"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		
+		<service android:name="com.baidu.location.f" android:enabled="true"
+			android:process=":remote">
+	<!--  		<intent-filter>
+				<action android:name="com.baidu.location.service_v2.9"></action>
+			</intent-filter>-->
+		</service>
+
+	</application>
+
+	
+  	
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+	
+	
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+</manifest>
