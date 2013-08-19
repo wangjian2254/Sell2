@@ -2,57 +2,39 @@ package com.wj.sell;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
 import com.umeng.analytics.MobclickAgent;
 import com.wj.sell.adapter.WendangAdapter;
-import com.wj.sell.controls.DropDownListView;
-import com.wj.sell.db.OfficeUtil;
 import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.models.Office;
 import com.wj.sell.db.models.UserInfo;
 import com.wj.sell.db.models.WenDang;
 import com.wj.sell.db.models.WenDangContent;
 import com.wj.sell.db.models.WenDangImage;
 import com.wj.sell.util.Convert;
 import com.wj.sell.util.ImageTask;
-import com.wj.sell.util.KindSync;
 import com.wj.sell.util.OAUtil;
-import com.wj.sell.util.OfficeSync;
 import com.wj.sell.util.UrlSync;
 import com.wj.sell.util.UrlTask;
 import com.wj.sell.util.WenDangContentSync;
-import com.wj.sell.util.WenDangSync;
-import com.wj.sell.WenDangDetail;
-import com.wj.sell.R;
-
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.ListActivity;
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.view.ContextMenu;
-import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.TextView;
 
 public class WenDangDetail extends Activity  {
 	

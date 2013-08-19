@@ -7,10 +7,9 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.wj.sell.db.models.QiandaoItem;
-import com.wj.sell.db.models.SellItem;
-
 import android.os.Message;
+
+import com.wj.sell.db.models.SellItem;
 
 
 public class XiaoShouTongJiSync extends UrlSync {

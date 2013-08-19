@@ -6,32 +6,23 @@ import java.util.List;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.widget.ListView;
 
-import com.wj.sell.adapter.AppItemAdapter;
-import com.wj.sell.adapter.QiandaoItemAdapter;
 import com.wj.sell.adapter.SellAdapter;
 import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.models.PluginMod;
-import com.wj.sell.db.models.QiandaoItem;
 import com.wj.sell.db.models.SellItem;
 import com.wj.sell.db.models.UserInfo;
 import com.wj.sell.util.Convert;
 import com.wj.sell.util.OAUtil;
-import com.wj.sell.util.QiandaoTongJiSync;
 import com.wj.sell.util.UrlSync;
 import com.wj.sell.util.UrlTask;
 import com.wj.sell.util.XiaoShouTongJiSync;
-
-import android.app.Activity;
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.view.View;
-import android.widget.GridView;
-import android.widget.ListView;
 
 public class XiaoShouAnalysis2 extends Activity {
     /** Called when the activity is first created. */
@@ -193,10 +184,10 @@ public class XiaoShouAnalysis2 extends Activity {
 		((SellAdapter) gridApp.getAdapter()).notifyDataSetChanged();
     }
     
-    private void getPluginList(){
-    	pluginList.clear();
-    	
-    }
+//    private void getPluginList(){
+//    	pluginList.clear();
+//    	
+//    }
     
     public void onResume(){
     	super.onResume();

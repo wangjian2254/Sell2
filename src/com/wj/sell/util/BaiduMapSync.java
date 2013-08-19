@@ -4,14 +4,12 @@ import org.json.JSONObject;
 
 import android.os.Message;
 
-import com.wj.sell.db.QiandaoUtil;
-
 public class BaiduMapSync extends UrlSync {
 
 	public void doResult() throws Exception {
 		// TODO Auto-generated method stub
 		JSONObject map=new JSONObject(getResult());
-		if(!"ok".equals(map.getString("status").toLowerCase())){
+		if(!"ok".equalsIgnoreCase(map.getString("status"))){
 			doFailureResult();
 			return;
 		}

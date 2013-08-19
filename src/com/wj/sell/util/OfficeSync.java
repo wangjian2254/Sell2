@@ -3,7 +3,6 @@ package com.wj.sell.util;
 import android.os.Message;
 
 import com.wj.sell.db.OfficeUtil;
-import com.wj.sell.db.QiandaoUtil;
 
 public class OfficeSync extends UrlSync {
 

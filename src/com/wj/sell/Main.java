@@ -4,21 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.umeng.analytics.MobclickAgent;
-import com.umeng.update.UmengUpdateAgent;
-import com.wj.sell.adapter.AppItemAdapter;
-import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.models.KaoShi;
-import com.wj.sell.db.models.PluginMod;
-import com.wj.sell.db.models.UserInfo;
-import com.wj.sell.util.Convert;
-import com.wj.sell.util.KaoShiSync;
-import com.wj.sell.util.OAUtil;
-import com.wj.sell.util.UrlSync;
-import com.wj.sell.util.UrlTask;
-
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,10 +15,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.umeng.analytics.MobclickAgent;
+import com.umeng.update.UmengUpdateAgent;
+import com.wj.sell.adapter.AppItemAdapter;
+import com.wj.sell.db.UserInfoUtil;
+import com.wj.sell.db.models.KaoShi;
+import com.wj.sell.db.models.PluginMod;
+import com.wj.sell.db.models.UserInfo;
+import com.wj.sell.util.Convert;
+import com.wj.sell.util.KaoShiSync;
+import com.wj.sell.util.UrlSync;
+import com.wj.sell.util.UrlTask;
 
 public class Main extends Activity {
     /** Called when the activity is first created. */
@@ -50,7 +48,7 @@ public class Main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         MobclickAgent.onError(this);
-        UmengUpdateAgent.update(this);
+        
         setContentView(R.layout.app_list);
         con=this;
     
@@ -244,6 +242,7 @@ public class Main extends Activity {
 	public void onResume(){
     	super.onResume();
     	syncKaoShi();
+    	UmengUpdateAgent.update(this);
     	MobclickAgent.onResume(this);
     }
     public void onPause() {

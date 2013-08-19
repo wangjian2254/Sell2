@@ -1,15 +1,8 @@
 package com.wj.sell.util;
 
-import org.apache.http.NameValuePair;
-import org.json.JSONObject;
-
 import android.os.Message;
 
-import com.wj.sell.db.QiandaoUtil;
 import com.wj.sell.db.XiaoShouUtil;
-import com.wj.sell.db.models.Office;
-import com.wj.sell.db.models.Qiandao;
-import com.wj.sell.db.models.UserQiandao;
 import com.wj.sell.db.models.UserXiaoShouOrder;
 
 public class UserXiaoShouSync extends UrlSync {

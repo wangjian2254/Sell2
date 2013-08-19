@@ -9,27 +9,6 @@ import java.util.regex.Pattern;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
-import com.baidu.location.LocationClient;
-import com.baidu.location.LocationClientOption;
-import com.umeng.analytics.MobclickAgent;
-import com.wj.sell.adapter.OfficeAdapter;
-import com.wj.sell.db.QiandaoUtil;
-import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.models.Office;
-import com.wj.sell.db.models.Qiandao;
-import com.wj.sell.db.models.UserInfo;
-import com.wj.sell.db.models.UserQiandao;
-import com.wj.sell.util.Convert;
-import com.wj.sell.util.OAUtil;
-import com.wj.sell.util.OfficeSync;
-import com.wj.sell.util.UrlSync;
-import com.wj.sell.util.UrlTask;
-import com.wj.sell.util.UserQiandaoSync;
-import com.wj.sell.QiandaoDetail2;
-import com.wj.sell.R;
-import com.wj.sell.Login;
-
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
@@ -49,13 +28,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
+import com.umeng.analytics.MobclickAgent;
+import com.wj.sell.adapter.OfficeAdapter;
+import com.wj.sell.db.QiandaoUtil;
+import com.wj.sell.db.UserInfoUtil;
+import com.wj.sell.db.models.Office;
+import com.wj.sell.db.models.Qiandao;
+import com.wj.sell.db.models.UserInfo;
+import com.wj.sell.db.models.UserQiandao;
+import com.wj.sell.util.Convert;
+import com.wj.sell.util.OAUtil;
+import com.wj.sell.util.OfficeSync;
+import com.wj.sell.util.UrlSync;
+import com.wj.sell.util.UrlTask;
+import com.wj.sell.util.UserQiandaoSync;
 
 public class QiandaoDetail2 extends ListActivity  {
 	

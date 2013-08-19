@@ -1,19 +1,18 @@
 package com.wj.sell;
 
-import java.util.Date;
-
-import com.baidu.location.*;
-import com.wj.sell.adapter.OfficeAdapter;
-import com.wj.sell.util.Convert;
-
 import android.app.Application;
-import android.util.Log;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Process;
 import android.os.Vibrator;
+import android.util.Log;
+import android.widget.TextView;
+
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.BDNotifyListener;
+import com.baidu.location.LocationClient;
+import com.wj.sell.adapter.OfficeAdapter;
 
 public class Location extends Application {
 

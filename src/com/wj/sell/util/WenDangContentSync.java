@@ -8,7 +8,6 @@ import org.json.JSONObject;
 
 import android.os.Message;
 
-import com.wj.sell.db.models.WenDang;
 import com.wj.sell.db.models.WenDangContent;
 import com.wj.sell.db.models.WenDangImage;
 

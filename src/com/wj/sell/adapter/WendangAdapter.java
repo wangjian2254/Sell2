@@ -1,18 +1,7 @@
 package com.wj.sell.adapter;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-
-import com.wj.sell.controls.AppItem;
-import com.wj.sell.db.QiandaoUtil;
-import com.wj.sell.db.models.Qiandao;
-import com.wj.sell.db.models.Qiandao;
-import com.wj.sell.db.models.WenDang;
-import com.wj.sell.Main;
-import com.wj.sell.R;
-import com.wj.sell.util.Convert;
-
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -20,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.wj.sell.R;
+import com.wj.sell.db.models.WenDang;
 
 public class WendangAdapter extends BaseAdapter {
 	private Context mContext;

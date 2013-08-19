@@ -8,18 +8,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
-import com.wj.sell.db.models.Office;
-import com.wj.sell.db.models.Qiandao;
-import com.wj.sell.db.models.UserQiandao;
-import com.wj.sell.db.models.UserXiaoShouOrder;
-import com.wj.sell.util.Convert;
-
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.wj.sell.db.models.Qiandao;
+import com.wj.sell.db.models.UserXiaoShouOrder;
+import com.wj.sell.util.Convert;
 
 public class XiaoShouUtil {
 	

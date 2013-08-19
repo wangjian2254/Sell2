@@ -5,21 +5,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-
-import com.umeng.analytics.MobclickAgent;
-import com.wj.sell.adapter.KaoShiAdapter;
-import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.models.KaoShi;
-import com.wj.sell.db.models.UserInfo;
-import com.wj.sell.util.Convert;
-import com.wj.sell.util.KaoShiSync;
-import com.wj.sell.util.OAUtil;
-import com.wj.sell.util.OfficeSync;
-import com.wj.sell.util.UrlSync;
-import com.wj.sell.util.UrlTask;
-import com.wj.sell.KaoShiList;
-import com.wj.sell.R;
-
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
@@ -38,9 +23,20 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.umeng.analytics.MobclickAgent;
+import com.wj.sell.adapter.KaoShiAdapter;
+import com.wj.sell.db.UserInfoUtil;
+import com.wj.sell.db.models.KaoShi;
+import com.wj.sell.db.models.UserInfo;
+import com.wj.sell.util.Convert;
+import com.wj.sell.util.KaoShiSync;
+import com.wj.sell.util.OAUtil;
+import com.wj.sell.util.OfficeSync;
+import com.wj.sell.util.UrlSync;
+import com.wj.sell.util.UrlTask;
+
 public class KaoShiList extends ListActivity  {
 	
-	private TextView nomessage;
 	private RadioButton kaoshi; 
 	private RadioButton kaoshiscore; 
 	ListView list;
@@ -61,7 +57,6 @@ public class KaoShiList extends ListActivity  {
 	private int type=0;
 	private UserInfo user=null;
 	private KaoShi currentoffice=null;
-	private int limit=30;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

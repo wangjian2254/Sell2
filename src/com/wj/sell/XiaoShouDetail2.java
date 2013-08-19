@@ -1,69 +1,44 @@
 package com.wj.sell;
 
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
-import java.util.regex.Pattern;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import com.baidu.location.LocationClient;
-import com.baidu.location.LocationClientOption;
-import com.umeng.analytics.MobclickAgent;
-import com.wj.sell.adapter.OfficeAdapter;
-import com.wj.sell.db.OfficeUtil;
-import com.wj.sell.db.QiandaoUtil;
-import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.XiaoShouUtil;
-import com.wj.sell.db.models.Office;
-import com.wj.sell.db.models.Qiandao;
-import com.wj.sell.db.models.UserInfo;
-import com.wj.sell.db.models.UserXiaoShouOrder;
-import com.wj.sell.db.models.UserQiandao;
-import com.wj.sell.util.Convert;
-import com.wj.sell.util.OAUtil;
-import com.wj.sell.util.OfficeSync;
-import com.wj.sell.util.UrlSync;
-import com.wj.sell.util.UrlTask;
-import com.wj.sell.util.UserQiandaoSync;
-import com.wj.sell.util.UserXiaoShouSync;
-import com.wj.sell.XiaoShouDetail2;
-import com.wj.sell.R;
-import com.wj.sell.Login;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.ListActivity;
 import android.app.ProgressDialog;
-import android.app.Service;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.os.Process;
-import android.os.Vibrator;
 import android.util.Log;
-import android.view.ContextMenu;
 import android.view.Gravity;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.umeng.analytics.MobclickAgent;
+import com.wj.sell.db.OfficeUtil;
+import com.wj.sell.db.UserInfoUtil;
+import com.wj.sell.db.XiaoShouUtil;
+import com.wj.sell.db.models.Office;
+import com.wj.sell.db.models.UserInfo;
+import com.wj.sell.util.Convert;
+import com.wj.sell.util.OAUtil;
+import com.wj.sell.util.UrlSync;
+import com.wj.sell.util.UrlTask;
+import com.wj.sell.util.UserXiaoShouSync;
 
 public class XiaoShouDetail2 extends Activity  {
 

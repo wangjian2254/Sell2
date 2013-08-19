@@ -1,23 +1,17 @@
 package com.wj.sell.util;
 
-import com.wj.sell.Login;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.provider.Settings;
-import android.provider.Settings.Secure;
-import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.wj.sell.Login;
 
 public class OAUtil {
 	static Context gpscon;

@@ -4,41 +4,22 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONArray;
-
-
-import com.wj.sell.adapter.AppItemAdapter;
-import com.wj.sell.adapter.SellAdapter;
-import com.wj.sell.db.QiandaoUtil;
-import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.models.PluginMod;
-import com.wj.sell.db.models.Qiandao;
-import com.wj.sell.db.models.SellItem;
-import com.wj.sell.db.models.UserInfo;
-import com.wj.sell.util.Convert;
-import com.wj.sell.util.OAUtil;
-import com.wj.sell.util.QiandaoTongJiSync;
-import com.wj.sell.util.UrlSync;
-import com.wj.sell.util.UrlTask;
-import com.wj.sell.util.UserQiandaoSync;
-
 import android.app.Activity;
 import android.app.DatePickerDialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.GridView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
+
+import com.wj.sell.db.QiandaoUtil;
+import com.wj.sell.db.UserInfoUtil;
+import com.wj.sell.db.models.Qiandao;
+import com.wj.sell.db.models.UserInfo;
+import com.wj.sell.util.Convert;
 
 public class QiandaoAnalysis extends Activity {
     /** Called when the activity is first created. */

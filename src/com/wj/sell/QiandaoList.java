@@ -2,17 +2,6 @@ package com.wj.sell;
 
 
 
-import com.umeng.analytics.MobclickAgent;
-import com.wj.sell.adapter.QiandaoAdapter;
-import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.models.Qiandao;
-import com.wj.sell.db.models.UserInfo;
-import com.wj.sell.util.Convert;
-import com.wj.sell.util.QiandaoSync;
-import com.wj.sell.util.OAUtil;
-import com.wj.sell.util.UrlSync;
-import com.wj.sell.util.UrlTask;
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,8 +9,18 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.umeng.analytics.MobclickAgent;
+import com.wj.sell.adapter.QiandaoAdapter;
+import com.wj.sell.db.UserInfoUtil;
+import com.wj.sell.db.models.Qiandao;
+import com.wj.sell.db.models.UserInfo;
+import com.wj.sell.util.Convert;
+import com.wj.sell.util.OAUtil;
+import com.wj.sell.util.QiandaoSync;
+import com.wj.sell.util.UrlSync;
+import com.wj.sell.util.UrlTask;
 
 public class QiandaoList extends ListActivity {
 	private UserInfo user;

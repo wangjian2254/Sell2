@@ -36,7 +36,7 @@
 	
 
 	
-	<com.wj.sell.control.DropDownListView 
+	<com.wj.sell.controls.DropDownListView 
         android:id="@android:id/list" 
         android:layout_gravity="top" 
 			  android:dividerHeight="0px"

@@ -1,18 +1,10 @@
 package com.wj.sell.util;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import android.os.Message;
 
-import com.wj.sell.db.models.Choice;
 import com.wj.sell.db.models.KaoShi;
-import com.wj.sell.db.models.Topic;
 
 public class KaoShiJiaoJuanSync extends UrlSync {
 	private KaoShi kaoshi;

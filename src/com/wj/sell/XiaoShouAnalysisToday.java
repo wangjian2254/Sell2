@@ -3,16 +3,6 @@ package com.wj.sell;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
-import com.wj.sell.adapter.TodaySellAdapter;
-import com.wj.sell.db.UserInfoUtil;
-import com.wj.sell.db.XiaoShouUtil;
-import com.wj.sell.db.models.UserXiaoShouOrder;
-import com.wj.sell.db.models.UserInfo;
-import com.wj.sell.util.Convert;
-
-import android.app.Activity;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -20,6 +10,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+
+import com.wj.sell.adapter.TodaySellAdapter;
+import com.wj.sell.db.UserInfoUtil;
+import com.wj.sell.db.XiaoShouUtil;
+import com.wj.sell.db.models.UserInfo;
+import com.wj.sell.db.models.UserXiaoShouOrder;
+import com.wj.sell.util.Convert;
 
 public class XiaoShouAnalysisToday extends ListActivity {
     /** Called when the activity is first created. */

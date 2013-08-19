@@ -3,19 +3,10 @@ package com.wj.sell.util;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-
-import com.wj.sell.db.models.UserXiaoShouOrder;
-
-
 
 import android.os.Environment;
-import android.os.Handler;
+
+import com.wj.sell.db.models.UserXiaoShouOrder;
 
 public class Convert {
 

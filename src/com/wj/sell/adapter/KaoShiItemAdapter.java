@@ -2,15 +2,6 @@ package com.wj.sell.adapter;
 
 import java.util.List;
 
-import com.wj.sell.controls.AppItem;
-import com.wj.sell.db.models.KaoShiItem;
-import com.wj.sell.db.models.PluginMod;
-import com.wj.sell.db.models.QiandaoItem;
-import com.wj.sell.db.models.SellItem;
-import com.wj.sell.Main;
-import com.wj.sell.R;
-
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import com.wj.sell.R;
+import com.wj.sell.db.models.KaoShiItem;
 
 public class KaoShiItemAdapter extends BaseAdapter {
 	private Context mContext;

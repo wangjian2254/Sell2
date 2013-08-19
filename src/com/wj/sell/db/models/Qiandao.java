@@ -1,7 +1,6 @@
 package com.wj.sell.db.models;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class Qiandao implements Serializable {
 

@@ -9,7 +9,6 @@ import org.json.JSONObject;
 import android.os.Message;
 
 import com.wj.sell.db.models.UserInfo;
-import com.wj.sell.db.models.WenDang;
 
 public class XiaShuSync extends UrlSync {
 	
