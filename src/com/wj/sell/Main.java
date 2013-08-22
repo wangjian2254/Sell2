@@ -22,6 +22,8 @@ import android.widget.Toast;
 
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.update.UmengUpdateAgent;
+import com.umeng.update.UmengUpdateListener;
+import com.umeng.update.UpdateResponse;
 import com.wj.sell.adapter.AppItemAdapter;
 import com.wj.sell.db.UserInfoUtil;
 import com.wj.sell.db.models.KaoShi;
@@ -47,10 +49,34 @@ public class Main extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MobclickAgent.onError(this);
-        
-        setContentView(R.layout.app_list);
         con=this;
+        MobclickAgent.onError(this);
+        UmengUpdateAgent.update(this);
+        UmengUpdateAgent.setUpdateAutoPopup(true);
+        UmengUpdateAgent.setUpdateListener(new UmengUpdateListener() {
+                @Override
+                public void onUpdateReturned(int updateStatus,UpdateResponse updateInfo) {
+                    switch (updateStatus) {
+                    case 0: // has update
+                        UmengUpdateAgent.showUpdateDialog(con, updateInfo);
+                        break;
+                    case 1: // has no update
+                        Toast.makeText(con, "没有更新", Toast.LENGTH_SHORT)
+                                .show();
+                        break;
+                    case 2: // none wifi
+                        Toast.makeText(con, "没有wifi连接， 只在wifi下更新", Toast.LENGTH_SHORT)
+                                .show();
+                        break;
+                    case 3: // time out
+                        Toast.makeText(con, "超时", Toast.LENGTH_SHORT)
+                                .show();
+                        break;
+                    }
+                }
+        });
+        setContentView(R.layout.app_list);
+        
     
         setContentView(R.layout.app_list);
         user=UserInfoUtil.getCurrentUserInfo(this);
@@ -242,7 +268,7 @@ public class Main extends Activity {
 	public void onResume(){
     	super.onResume();
     	syncKaoShi();
-    	UmengUpdateAgent.update(this);
+    	
     	MobclickAgent.onResume(this);
     }
     public void onPause() {

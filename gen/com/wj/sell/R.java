@@ -88,11 +88,23 @@ containing a value of this type.
         public static final int umeng_analyse_gradient_green=0x7f020009;
         public static final int umeng_analyse_gradient_orange=0x7f02000a;
         public static final int umeng_analyse_submit_selector=0x7f02000b;
+        public static final int umeng_common_gradient_green=0x7f02000c;
+        public static final int umeng_common_gradient_orange=0x7f02000d;
+        public static final int umeng_common_gradient_red=0x7f02000e;
+        public static final int umeng_update_button_cancel_normal=0x7f02000f;
+        public static final int umeng_update_button_cancel_selector=0x7f020010;
+        public static final int umeng_update_button_cancel_tap=0x7f020011;
+        public static final int umeng_update_button_ok_normal=0x7f020012;
+        public static final int umeng_update_button_ok_selector=0x7f020013;
+        public static final int umeng_update_button_ok_tap=0x7f020014;
+        public static final int umeng_update_dialog_bg=0x7f020015;
+        public static final int umeng_update_title_bg=0x7f020016;
+        public static final int umeng_update_wifi_disable=0x7f020017;
     }
     public static final class id {
         public static final int PoiReq=0x7f07004c;
         public static final int StartBtn=0x7f070043;
-        public static final int addgift=0x7f070064;
+        public static final int addgift=0x7f070072;
         public static final int addrEdit=0x7f070046;
         public static final int address=0x7f070012;
         public static final int app_item_img=0x7f070020;
@@ -100,13 +112,13 @@ containing a value of this type.
         /**  Messages IDs 
          */
         public static final int auto_focus=0x7f070000;
-        public static final int btnReSubmit=0x7f070067;
-        public static final int btnSubmit=0x7f070066;
+        public static final int btnReSubmit=0x7f070075;
+        public static final int btnSubmit=0x7f070074;
         public static final int btn_favorite_tabheader=0x7f070041;
         public static final int button1=0x7f070036;
         public static final int choicelist=0x7f070030;
         public static final int ckform=0x7f07003f;
-        public static final int cleangift=0x7f070063;
+        public static final int cleangift=0x7f070071;
         public static final int coorEdit=0x7f070049;
         public static final int date=0x7f07000f;
         public static final int dateTime=0x7f07001a;
@@ -116,7 +128,7 @@ containing a value of this type.
         public static final int decode_failed=0x7f070002;
         public static final int decode_succeeded=0x7f070003;
         public static final int document_answer=0x7f070031;
-        public static final int document_content=0x7f070059;
+        public static final int document_content=0x7f070067;
         public static final int document_info=0x7f07002f;
         public static final int document_title=0x7f07002d;
         public static final int drop_down_list_footer_button=0x7f070027;
@@ -129,11 +141,11 @@ containing a value of this type.
         public static final int edit=0x7f070047;
         public static final int encode_failed=0x7f070004;
         public static final int encode_succeeded=0x7f070005;
-        public static final int giftlayout=0x7f070062;
+        public static final int giftlayout=0x7f070070;
         public static final int gpsCheck=0x7f07004a;
         public static final int gridAppView=0x7f070022;
         public static final int hege=0x7f07001b;
-        public static final int imie=0x7f070060;
+        public static final int imie=0x7f07006e;
         public static final int isAddrInfocb=0x7f07004f;
         public static final int jishi_btn=0x7f07002e;
         public static final int jixing=0x7f07001d;
@@ -151,18 +163,18 @@ containing a value of this type.
         public static final int notice_title=0x7f070050;
         public static final int num=0x7f070016;
         public static final int offLineBtn=0x7f07004e;
-        public static final int office_list=0x7f070068;
+        public static final int office_list=0x7f070076;
         public static final int officename=0x7f070019;
         public static final int ok=0x7f07003e;
         public static final int password=0x7f07003c;
-        public static final int piclist=0x7f070058;
+        public static final int piclist=0x7f070066;
         public static final int pinpai=0x7f07001c;
-        public static final int plugin_btn_search=0x7f07005b;
+        public static final int plugin_btn_search=0x7f070069;
         public static final int preview_view=0x7f070024;
         public static final int price=0x7f070017;
         public static final int priorityCheck=0x7f07004d;
         public static final int product=0x7f070014;
-        public static final int producttype=0x7f07005e;
+        public static final int producttype=0x7f07006c;
         public static final int pword=0x7f07003b;
         public static final int qiandao_service=0x7f070037;
         public static final int qiandaoname=0x7f070018;
@@ -179,24 +191,38 @@ containing a value of this type.
         public static final int search_book_contents_succeeded=0x7f07000b;
         public static final int search_type=0x7f070054;
         public static final int setBtn=0x7f070045;
-        public static final int setimie=0x7f070061;
-        public static final int setoffice=0x7f07005c;
-        public static final int setproduct=0x7f07005d;
-        public static final int setproducttype=0x7f07005f;
+        public static final int setimie=0x7f07006f;
+        public static final int setoffice=0x7f07006a;
+        public static final int setproduct=0x7f07006b;
+        public static final int setproducttype=0x7f07006d;
         public static final int table1=0x7f07000e;
         public static final int table2=0x7f070010;
         public static final int table3=0x7f070013;
         public static final int tableTitle=0x7f07000c;
         public static final int table_listView=0x7f07000d;
-        public static final int tel=0x7f070065;
+        public static final int tel=0x7f070073;
         public static final int textView1=0x7f07004b;
         public static final int textView2=0x7f070048;
         public static final int textview=0x7f070042;
         public static final int time=0x7f070015;
+        public static final int umeng_common_app=0x7f070058;
+        public static final int umeng_common_appIcon=0x7f070059;
+        public static final int umeng_common_description=0x7f070060;
+        public static final int umeng_common_notification=0x7f07005e;
+        public static final int umeng_common_notification_controller=0x7f07005b;
+        public static final int umeng_common_progress_bar=0x7f070061;
+        public static final int umeng_common_progress_text=0x7f07005a;
+        public static final int umeng_common_rich_notification_cancel=0x7f07005d;
+        public static final int umeng_common_rich_notification_continue=0x7f07005c;
+        public static final int umeng_common_title=0x7f07005f;
+        public static final int umeng_update_content=0x7f070063;
+        public static final int umeng_update_id_cancel=0x7f070065;
+        public static final int umeng_update_id_ok=0x7f070064;
+        public static final int umeng_update_wifi_indicator=0x7f070062;
         public static final int uname=0x7f07003a;
-        public static final int user_list=0x7f070069;
+        public static final int user_list=0x7f070077;
         public static final int viewfinder_view=0x7f070025;
-        public static final int wendang_search_text=0x7f07005a;
+        public static final int wendang_search_text=0x7f070068;
         public static final int zhuguan=0x7f07001f;
     }
     public static final class layout {
@@ -222,18 +248,32 @@ containing a value of this type.
         public static final int qiandao_list=0x7f030013;
         public static final int qiandao_searchwindow=0x7f030014;
         public static final int qiandaoanaylsis=0x7f030015;
-        public static final int wendang_detail=0x7f030016;
-        public static final int wendang_search_list=0x7f030017;
-        public static final int xiaoshou_detail1=0x7f030018;
-        public static final int xiaoshou_detail2=0x7f030019;
-        public static final int xiaoshou_searchwindow=0x7f03001a;
-        public static final int xiaoshouanaylsis=0x7f03001b;
-        public static final int xiaoshouanaylsistoday=0x7f03001c;
+        public static final int umeng_common_download_notification=0x7f030016;
+        public static final int umeng_update_dialog=0x7f030017;
+        public static final int wendang_detail=0x7f030018;
+        public static final int wendang_search_list=0x7f030019;
+        public static final int xiaoshou_detail1=0x7f03001a;
+        public static final int xiaoshou_detail2=0x7f03001b;
+        public static final int xiaoshou_searchwindow=0x7f03001c;
+        public static final int xiaoshouanaylsis=0x7f03001d;
+        public static final int xiaoshouanaylsistoday=0x7f03001e;
     }
     public static final class raw {
         public static final int beep=0x7f040000;
     }
     public static final class string {
+        public static final int UMAppUpdate=0x7f08001f;
+        public static final int UMBreak_Network=0x7f080017;
+        public static final int UMDialog_InstallAPK=0x7f080022;
+        public static final int UMGprsCondition=0x7f08001d;
+        public static final int UMNewVersion=0x7f080019;
+        public static final int UMNotNow=0x7f080020;
+        public static final int UMTargetSize=0x7f08001c;
+        public static final int UMToast_IsUpdating=0x7f080021;
+        public static final int UMUpdateContent=0x7f08001a;
+        public static final int UMUpdateNow=0x7f08001e;
+        public static final int UMUpdateSize=0x7f08001b;
+        public static final int UMUpdateTitle=0x7f080018;
         public static final int app_name=0x7f080001;
         public static final int copyright=0x7f080006;
         public static final int drop_down_list_footer_default_text=0x7f08000b;
@@ -247,6 +287,14 @@ containing a value of this type.
         public static final int image_content=0x7f08000e;
         public static final int password=0x7f080003;
         public static final int repassword=0x7f080004;
+        public static final int umeng_common_action_cancel=0x7f080013;
+        public static final int umeng_common_action_continue=0x7f080012;
+        public static final int umeng_common_action_info_exist=0x7f08000f;
+        public static final int umeng_common_action_pause=0x7f080011;
+        public static final int umeng_common_download_failed=0x7f080016;
+        public static final int umeng_common_download_notification_prefix=0x7f080014;
+        public static final int umeng_common_info_interrupt=0x7f080010;
+        public static final int umeng_common_network_break_alert=0x7f080015;
         public static final int username=0x7f080002;
         public static final int writepassword=0x7f080005;
     }

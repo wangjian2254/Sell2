@@ -68,6 +68,16 @@
 			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
 
 		</activity>
+		<activity android:name="com.wj.sell.KaoShiAnalysis"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
+		<activity android:name="com.wj.sell.KaoShiAnalysis2"
+		android:screenOrientation="portrait"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+
+		</activity>
 		<activity android:name="com.wj.sell.KaoShiDetail"
 		android:screenOrientation="portrait"
 			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
@@ -100,7 +110,11 @@
 				<action android:name="com.baidu.location.service_v2.9"></action>
 			</intent-filter>-->
 		</service>
-
+		<service
+		    android:name="com.umeng.common.net.DownloadingService"
+		    android:exported="true"
+		    android:process=":DownloadingService" >
+		</service>
 	</application>
 
 	
