@@ -60,18 +60,18 @@ public class Main extends Activity {
                     case 0: // has update
                         UmengUpdateAgent.showUpdateDialog(con, updateInfo);
                         break;
-                    case 1: // has no update
-                        Toast.makeText(con, "没有更新", Toast.LENGTH_SHORT)
-                                .show();
-                        break;
-                    case 2: // none wifi
-                        Toast.makeText(con, "没有wifi连接， 只在wifi下更新", Toast.LENGTH_SHORT)
-                                .show();
-                        break;
-                    case 3: // time out
-                        Toast.makeText(con, "超时", Toast.LENGTH_SHORT)
-                                .show();
-                        break;
+//                    case 1: // has no update
+//                        Toast.makeText(con, "没有更新", Toast.LENGTH_SHORT)
+//                                .show();
+//                        break;
+//                    case 2: // none wifi
+//                        Toast.makeText(con, "没有wifi连接， 只在wifi下更新", Toast.LENGTH_SHORT)
+//                                .show();
+//                        break;
+//                    case 3: // time out
+//                        Toast.makeText(con, "超时", Toast.LENGTH_SHORT)
+//                                .show();
+//                        break;
                     }
                 }
         });
