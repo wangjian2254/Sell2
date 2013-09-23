@@ -75,7 +75,6 @@ public class Main extends Activity {
                     }
                 }
         });
-        setContentView(R.layout.app_list);
         
     
         setContentView(R.layout.app_list);
